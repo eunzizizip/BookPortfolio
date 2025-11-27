@@ -1,0 +1,53 @@
+.contents {
+  padding: 60px;
+  font-family: "Pretendard";
+}
+
+.contents-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #667eea;
+  font-weight: 700;
+}
+
+.contents-list {
+  list-style: none;
+  padding: 0;
+  line-height: 2.2;
+  font-size: 20px;
+  color: #333;
+}
+
+.contents-list li {
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.contents-list li:hover {
+  color: #667eea;
+  transform: translateX(3px);
+}
+
+.sub-list {
+  list-style: none;
+  padding-left: 25px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.sub-list li {
+  font-size: 18px;
+  color: #555;
+}
+
+.sub-list li:hover {
+  color: #667eea;
+}
+
+.contents-note {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+}
