@@ -1,4 +1,6 @@
 import React from "react";
+import DayIImage from '../assets/dayi.png'; // 경로는 ProjectDetail.jsx 위치 기준
+
 
 // ProjectDetail 컴포넌트 (Projects 컴포넌트의 스타일과 일치하도록 조정)
 export default function ProjectDetail() {
@@ -63,18 +65,19 @@ export default function ProjectDetail() {
       </p>
 
       {/* --- 프로젝트 이미지 추가 --- */}
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <img 
-          src="/public/dayi.png"   // ← 여기에 너 이미지 경로 넣기
-          alt="프로젝트 이미지"
-          style={{
-            width: '100%',
-            maxWidth: '600px',
-            borderRadius: '12px',
-            boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
-          }}
-        />
-      </div>
+  <img
+  src={DayIImage}
+  alt="프로젝트 이미지"
+  style={{
+    width: '100%',
+    maxWidth: '600px',
+    borderRadius: '12px',
+    boxShadow: '0 6px 18px rgba(0,0,0,0.12)',
+    marginBottom: '40px' // 여기서 마진 적용
+  }}
+/>
+
+
 
 
       {/* --- 기간 및 팀 구성 섹션 --- */}

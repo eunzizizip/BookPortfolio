@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeFile from "../assets/resume.pdf";
 
 export default function ResumeDownload() {
   return (
@@ -38,7 +39,7 @@ export default function ResumeDownload() {
           아래 버튼을 눌러 이력서 및 자기소개서를 다운로드할 수 있습니다.
         </p>
 
-        <a href="/resume.pdf" download>
+         <a href={ResumeFile} download>
           <button
             style={{
               padding: "12px 28px",

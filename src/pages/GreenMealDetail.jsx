@@ -1,4 +1,5 @@
 import React from "react";
+import GreenMeal from '../assets/greenmeal.png'; // 경로는 ProjectDetail.jsx 위치 기준
 
 export default function GreenMealDetail() {
   const mainColor = '#f093fb'; // Projects 컴포넌트에서 Green Meal에 사용된 색상
@@ -63,18 +64,17 @@ export default function GreenMealDetail() {
       </p>
 
       {/* --- 프로젝트 이미지 추가 --- */}
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <img 
-          src="/public/greenmeal.png"   // ← 여기에 너 이미지 경로 넣기
-          alt="프로젝트 이미지"
-          style={{
-            width: '100%',
-            maxWidth: '600px',
-            borderRadius: '12px',
-            boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
-          }}
-        />
-      </div>
+       <img
+        src={GreenMeal}
+        alt="프로젝트 이미지"
+        style={{
+          width: '100%',
+          maxWidth: '600px',
+          borderRadius: '12px',
+          boxShadow: '0 6px 18px rgba(0,0,0,0.12)',
+          marginBottom: '40px' // 여기서 마진 적용
+        }}
+      />
 
       {/* --- 기간 및 팀 구성 섹션 --- */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginBottom: '40px' }}>

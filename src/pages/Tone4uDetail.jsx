@@ -1,4 +1,5 @@
 import React from "react";
+import Tone4U from '../assets/tone4u.png'; // 경로는 ProjectDetail.jsx 위치 기준
 
 export default function Tone4uDetail() {
   const mainColor = '#4facfe'; // Projects 컴포넌트에서 TONE4U에 사용된 색상
@@ -63,21 +64,18 @@ export default function Tone4uDetail() {
       </p>
 
       {/* --- 프로젝트 이미지 추가 --- */}
-      <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <img 
-          src="/public/tone4u.png"   
-          alt="프로젝트 이미지"
-          style={{
-            width: 'auto', // 너비는 내용에 맞게 자동 조절 (max-width가 적용됨)
-            maxWidth: '400px', // 이미지의 최대 너비를 줄여서 전체적으로 작게 보이게 함 (선택 사항)
-            maxHeight: '400px', // 💡 이미지의 최대 높이를 400px로 제한합니다.
-            height: 'auto', // 높이를 자동으로 조절하여 가로세로 비율 유지
-            objectFit: 'contain', // 💡 이미지가 컨테이너에 맞춰지되 잘리지 않도록 합니다.
-            borderRadius: '12px',
-            boxShadow: '0 6px 18px rgba(0,0,0,0.12)'
-          }}
-        />
-      </div>
+      <img
+              src={Tone4U}
+              alt="프로젝트 이미지"
+              style={{
+                width: '100%',
+                maxWidth: '600px',
+                borderRadius: '12px',
+                boxShadow: '0 6px 18px rgba(0,0,0,0.12)',
+                marginBottom: '40px' // 여기서 마진 적용
+              }}
+            />
+      
 
       {/* --- 기간 및 팀 구성 섹션 --- */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '30px', marginBottom: '40px' }}>
